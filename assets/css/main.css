@@ -1,0 +1,50 @@
+
+#canchaDeFutbol{
+  background-color: #6c8c5c;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  width: 620px;
+  height: 370px;
+  position: relative;
+}
+
+.fondoCancha{
+  position: absolute;
+  margin: 10px;
+  border: 1px solid white;
+  width: 600px;
+  height: 350px;
+}
+
+.porteria{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+
+}
+
+.izquierda{
+
+  left:0;
+  top: 33.33%;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.derecha{
+  right: 0;
+  top: 33.33%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.centro{
+  position: absolute;
+  top:  33.33%;
+  left: 36%;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  border: 1px solid white;
+}
