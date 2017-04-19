@@ -25,7 +25,7 @@
 .izquierda{
 
   left:0;
-  top: 33.33%;
+  top: 25%;
   border-right: 1px solid white;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
@@ -33,7 +33,7 @@
 
 .derecha{
   right: 0;
-  top: 33.33%;
+  top: 25%;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   border-left: 1px solid white;
@@ -41,7 +41,7 @@
 
 .centro{
   position: absolute;
-  top:  33.33%;
+  top:  25%;
   left: 36%;
   width: 150px;
   height: 150px;

@@ -5,12 +5,10 @@ var divPorteria = crearUnDiv();
 var divPorteria2 = crearUnDiv();
 var divCentro = crearUnDiv();
 
-divFondo.class ="fondoCancha";
-divPorteria.class ="porteria";
-divPorteria.class ="izquierda";
-divPorteria2.class ="porteria";
-divPorteria2.class ="derecha";
-divCentro.class = "centro";
+divFondo.className ="fondoCancha";
+divPorteria.className ="porteria izquierda";
+divPorteria2.className ="porteria derecha";
+divCentro.className = "centro";
 canchaDeFutbol.id= "canchaDeFutbol";
 
 
