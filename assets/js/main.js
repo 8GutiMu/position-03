@@ -1,20 +1,34 @@
-var espacioParaCancha= document.getElementById("aquiVaLaCancha");
-var canchaDeFutbol= document.createElement("section");
-var spanCopyRigth = document.createElement("span");
-var divFondo = crearUnDiv();
-var divPorteria = crearUnDiv();
-var divPorteria2 = crearUnDiv();
-var divCentro = crearUnDiv();
-var bolita1 = crearUnDiv();
+function crearUnElemento(elementoACrear,propiedades) {
+  var algo = document.createElement(elementoACrear);
+  algo.className= propiedades.className;
+  algo.innerText = propiedades.innerText;
 
-spanCopyRigth.innerText="©Kaizen"
-spanCopyRigth.className="spanDerechitos"
-divFondo.className ="fondoCancha";
-divPorteria.className ="porteria izquierda";
-divPorteria2.className ="porteria derecha";
-divCentro.className = "centro";
-canchaDeFutbol.id= "canchaDeFutbol";
-bolita1.className="bolitas";
+  return algo;
+}
+
+var canchaDeFutbol = crearUnElemento("section",
+  {className:"canchaDeFutbol",innerText:""})
+
+var spanCopyRigth = crearUnElemento("span",
+  {className:"spanDerechitos",innerText:"©Kaizen"})
+
+var divFondo = crearUnElemento("div",
+  {className:"fondoCancha",innerText:""})
+
+var divPorteria = crearUnElemento("div",
+  {className:"porteria izquierda",innerText:""})
+
+var divPorteria2 = crearUnElemento("div",
+  {className:"porteria derecha",innerText:""})
+
+var divCentro= crearUnElemento("div",
+  {className:"centro",innerText:""})
+
+var bolita1 = crearUnElemento("div",
+  {className:"bolitas",innerText:""})
+
+var espacioParaCancha= document.getElementById("aquiVaLaCancha");
+
 
 
 canchaDeFutbol.appendChild(bolita1);
@@ -24,10 +38,3 @@ divFondo.appendChild(divPorteria);
 canchaDeFutbol.appendChild(divFondo);
 canchaDeFutbol.appendChild(spanCopyRigth);
 espacioParaCancha.appendChild(canchaDeFutbol);
-
-
-
-function crearUnDiv() {
-  var algo = document.createElement("div");
-  return algo;
-}
