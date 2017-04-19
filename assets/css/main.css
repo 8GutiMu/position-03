@@ -1,10 +1,10 @@
-
 #canchaDeFutbol{
   background-color: #6c8c5c;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
   width: 620px;
   height: 370px;
   position: relative;
+  box-shadow: 5px 5px 25px #888888;
 }
 
 .fondoCancha{
@@ -13,6 +13,7 @@
   border: 1px solid white;
   width: 600px;
   height: 350px;
+
 }
 
 .porteria{
@@ -47,4 +48,22 @@
   height: 150px;
   border-radius: 100px;
   border: 1px solid white;
+}
+
+.spanDerechitos{
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font-size: 12px;
+}
+
+.bolitas{
+  background-color: white;
+  position: absolute;
+  top:100px;
+  left:150px;
+  width: 10px;
+  height: 10px;
+  box-shadow: 2px 2px 1px #888888;
+  border-radius: 10px;
 }
